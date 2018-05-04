@@ -1,4 +1,5 @@
-FROM golang:alpine
+# BUILD STAGE
+FROM golang:alpine as build-env
 
 WORKDIR /go/src/fiveN1
 
@@ -10,6 +11,15 @@ RUN set -ex; \
 COPY . /go/src/fiveN1/
 
 RUN dep ensure -v -vendor-only && \
-    go install -v ./...
+    CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
 
-CMD ["fiveN1"]
+# FINAL STAGE
+FROM alpine
+
+RUN apk --no-cache add ca-certificates
+
+WORKDIR /root/
+
+COPY --from=build-env /go/src/fiveN1/app .
+
+CMD ["./app"]
