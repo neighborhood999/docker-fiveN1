@@ -1,5 +1,5 @@
 # BUILD STAGE
-FROM golang:alpine as build-env
+FROM golang:alpine AS builder
 
 WORKDIR /go/src/fiveN1
 
@@ -20,6 +20,6 @@ RUN apk --no-cache add ca-certificates
 
 WORKDIR /root/
 
-COPY --from=build-env /go/src/fiveN1/app .
+COPY --from=builder /go/src/fiveN1/app .
 
 CMD ["./app"]
