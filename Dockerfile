@@ -7,9 +7,7 @@ RUN set -ex; \
     curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh && \
     dep version
 
-ADD Gopkg.lock .
-ADD Gopkg.toml .
-ADD main.go .
+COPY . /go/src/fiveN1/
 
 RUN dep ensure -v -vendor-only && \
     go install -v ./...
