@@ -22,4 +22,6 @@ WORKDIR /root/
 
 COPY --from=builder /go/src/fiveN1/app .
 
+EXPOSE 8000
+
 CMD ["./app"]
