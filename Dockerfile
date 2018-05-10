@@ -8,7 +8,7 @@ RUN set -ex; \
     && curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh \
     && dep version
 
-COPY . /go/src/fiveN1/
+COPY . .
 
 RUN dep ensure -v -vendor-only \
     && CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
