@@ -20,10 +20,10 @@
   revision = "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
 
 [[projects]]
-  branch = "master"
   name = "github.com/neighborhood999/fiveN1-rent-scraper"
   packages = ["."]
-  revision = "313a0d77e525af7285e07e984bc8dfef37b356c3"
+  revision = "5d501fdd6207f24710eae1319fbdcd993f682f74"
+  version = "1.0.0"
 
 [[projects]]
   name = "github.com/vinta/pangu"
@@ -38,7 +38,7 @@
     "html",
     "html/atom"
   ]
-  revision = "5f9ae10d9af5b1c89ae6904293b14b064d4ada23"
+  revision = "2491c5de3490fced2f6cff376127c667efeed857"
 
 [solve-meta]
   analyzer-name = "dep"
