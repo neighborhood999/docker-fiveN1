@@ -22,7 +22,7 @@
 [[projects]]
   name = "github.com/neighborhood999/fiveN1-rent-scraper"
   packages = ["."]
-  revision = "5d501fdd6207f24710eae1319fbdcd993f682f74"
+  revision = "0374e3fc0d877e7ff71b36c413ba98a5dfa0fce5"
   version = "1.0.0"
 
 [[projects]]
