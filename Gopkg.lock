@@ -22,8 +22,8 @@
 [[projects]]
   name = "github.com/neighborhood999/fiveN1-rent-scraper"
   packages = ["."]
-  revision = "8a5ae848f4fac2ac2d602c0f991f4d02257c0c4e"
-  version = "1.1.0"
+  revision = "92f2ddcc9486e794b59e35afe71d44d4936c8cdf"
+  version = "1.1.1"
 
 [[projects]]
   name = "github.com/vinta/pangu"
@@ -38,11 +38,11 @@
     "html",
     "html/atom"
   ]
-  revision = "57065200b4b034a1c8ad54ff77069408c2218ae6"
+  revision = "8e0cdda24ed423affc8f35c241e5e9b16180338e"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "bb878daea3a92005d574164522b23c6d80e5c2f56946713d8fe905aa41bdd5a2"
+  inputs-digest = "cbd4730a3294f27e93322957fdc4b630fbb8947b476cedb4597ccb9b5b941451"
   solver-name = "gps-cdcl"
   solver-version = 1
