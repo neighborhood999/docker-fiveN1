@@ -8,7 +8,7 @@ build:
 
 .PHONY: run
 run:
-	docker run --rm -p ${PORT}:8000 neighborhood999/fiven1-backend
+	docker run --rm -p $(PORT):8000 neighborhood999/fiven1-backend
 
 .PHONY: update_dep
 update_dep:
