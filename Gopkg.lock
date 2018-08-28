@@ -2,47 +2,60 @@
 
 
 [[projects]]
+  digest = "1:a62f6ed230a8cd138a9efbe718e7d0b0294f139266f5f55cd942769a9aac8de2"
   name = "github.com/PuerkitoBio/goquery"
   packages = ["."]
-  revision = "a86ea073017a6beddef78c8659e7224e8ca634b0"
-  version = "v1.4.0"
+  pruneopts = "UT"
+  revision = "dc2ec5c7ca4d9aae063b79b9f581dd3ea6afd2b2"
+  version = "v1.4.1"
 
 [[projects]]
+  digest = "1:66b3310cf22cdc96c35ef84ede4f7b9b370971c4025f394c89a2638729653b11"
   name = "github.com/andybalholm/cascadia"
   packages = ["."]
+  pruneopts = "UT"
   revision = "901648c87902174f774fac311d7f176f8647bdaa"
   version = "v1.0.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:a63cff6b5d8b95638bfe300385d93b2a6d9d687734b863da8e09dc834510a690"
   name = "github.com/google/go-querystring"
   packages = ["query"]
+  pruneopts = "UT"
   revision = "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
 
 [[projects]]
+  branch = "master"
+  digest = "1:5bffefa74b3bff2ee630f82f63e4bb4b0944a1512d63592ec8434dcdfc733fe1"
   name = "github.com/neighborhood999/fiveN1-rent-scraper"
   packages = ["."]
-  revision = "92f2ddcc9486e794b59e35afe71d44d4936c8cdf"
-  version = "1.1.1"
+  pruneopts = "UT"
+  revision = "b51e174a174ddbe0c9f0e9ce687690170c19b80a"
+  source = "github.com/neighborhood999/fiveN1-rent-scraper"
 
 [[projects]]
+  digest = "1:f65f69106b85620aa4ad153685c2ec3798f433902e3d595a298cf6a503169b09"
   name = "github.com/vinta/pangu"
   packages = ["."]
+  pruneopts = "UT"
   revision = "f1cdb73eaf33f9057f38302f610a021bbca5b46a"
   version = "v3.0.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:0185c27476ac2aa653c9b932843b41409b9a42a8f38b09c8e25c8fb1fcd499c5"
   name = "golang.org/x/net"
   packages = [
     "html",
-    "html/atom"
+    "html/atom",
   ]
-  revision = "8e0cdda24ed423affc8f35c241e5e9b16180338e"
+  pruneopts = "UT"
+  revision = "8a410e7b638dca158bf9e766925842f6651ff828"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "cbd4730a3294f27e93322957fdc4b630fbb8947b476cedb4597ccb9b5b941451"
+  input-imports = ["github.com/neighborhood999/fiveN1-rent-scraper"]
   solver-name = "gps-cdcl"
   solver-version = 1
